@@ -1,0 +1,17 @@
+<p>listado de heroes</p>
+<section class="heroes__eliminados" *ngIf="heroeEliminado; else noEliminado">
+    <p class="heroe__title">Heroe Eliminado:</p>
+    <h2 class="heroe__eliminado"><small>{{heroeEliminado}}</small></h2>
+    <h2 class="heroe__eliminado" style="text-decoration: underline;" *ngIf="heroes.length === 0"><small>{{mensaje}}</small></h2>
+</section>
+
+<ng-template #noEliminado class="heroes__eliminados">
+    <p class="heroe__title">No se ha eliminado nada.</p>
+</ng-template>
+
+<ul>
+    <li *ngFor="let heroe of heroes; let n = index">{{n + 1}} - {{heroe}}</li>
+</ul>
+
+<button type="button" (click)="borrarHeroe()">Borrar Heroe</button>
+<button type="button" (click)="reiniciar()">Reiniciar</button>

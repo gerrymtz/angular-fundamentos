@@ -1,1 +1,106 @@
-/* You can add global styles to this file, and also import other style files */
+*,
+::after,
+::before {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    color: #3e4144;
+    -webkit-font-smoothing: antialiased;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 200;
+  }
+  
+  dd {
+    font-weight: bold;
+  }
+  
+  button {
+    background-color: black;
+    border-radius: 5px;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    padding: 15px 30px;
+    transform: scale(1);
+    transition: 100ms transform ease-in;
+  }
+  
+  button:hover {
+    background-color: #3e4144;
+  }
+
+  button:active {
+    transform: scale(1.1);
+    transition: 100ms transform ease-in;
+  }
+  
+  button:focus{ 
+    outline: none;
+  }
+  
+  .p-1 {
+    padding: 1px;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 40px 0;
+    overflow: hidden;
+  }
+
+  .title {
+    margin-bottom: 30px;
+  }
+
+  .counter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 50%;
+  } 
+
+ .counter__text {
+   display: inline-block;
+   text-align: center;
+   display: inline-block;
+   text-align: center;
+   font-size: 1.5rem;
+ }
+
+ button {
+   margin-top: 30px;
+ }
+
+ .btn__reset {
+   display: block;
+   margin-top: 30px;
+   background-color: crimson;
+ }
+
+ .btn__reset:hover {
+   background-color: black;
+   color: white;
+   text-decoration: underline;
+ }
+
+ ul {
+   margin-top: 20px;
+   min-height: 115px;
+ }
+
+ .heroe__eliminado {
+   margin-top: 10px;
+ }
+
+ .heroe__title {
+   margin-top: 15px;
+ }
