@@ -1,0 +1,19 @@
+<main class="main">
+
+    <section class="main__container container">
+        <h1>Dragon Ball Z</h1>
+
+        <section class="row">
+
+            <div class="col">
+                <app-personajes [personajes]="personajesDBZ"></app-personajes>
+            </div>
+
+            <div class="col">
+                <app-agregar [personajesDBZ]="personajesDBZ" [nuevoPersonaje]="nuevoPersonaje"></app-agregar>
+            </div>
+
+        </section>
+    </section>
+
+</main>
