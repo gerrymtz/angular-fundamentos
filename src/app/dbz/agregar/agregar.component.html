@@ -1,6 +1,6 @@
 <h3 class="col__title--add">Agregando a:<span> {{nuevoPersonaje.nombre}}</span> </h3>
 
-<form (ngSubmit)="enviarDatos()">
+<form (ngSubmit)="enviarPersonaje()">
     <input type="text" name="Nombre" placeholder="Nombre" [(ngModel)]="nuevoPersonaje.nombre">
 
     <input type="text" name="Poder" placeholder="Poder" [(ngModel)]="nuevoPersonaje.poder">

@@ -10,7 +10,7 @@
             </div>
 
             <div class="col">
-                <app-agregar [personajesDBZ]="personajesDBZ" [nuevoPersonaje]="nuevoPersonaje"></app-agregar>
+                <app-agregar [nuevoPersonaje]="personajePredefinido" (onNuevoPersonaje)="agregarNuevoPersonaje($event)"></app-agregar>
             </div>
 
         </section>
